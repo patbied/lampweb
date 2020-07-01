@@ -4,6 +4,8 @@ import '../css/homepage.scss';
 import CarouselPage from '../subComponents/carousel';
 import Jumbotron from '../subComponents/jumbotronHome1';
 import LowerJumbot from '../subComponents/belowJumbotronHome';
+import HomeCards from '../subComponents/cardHome';
+import Footer from '../subComponents/footer';
 class Homepage extends Component {
   state = {};
   render() {
@@ -12,6 +14,8 @@ class Homepage extends Component {
         <CarouselPage />
         <Jumbotron />
         <LowerJumbot />
+        <HomeCards />
+        <Footer />
       </div>
     );
   }

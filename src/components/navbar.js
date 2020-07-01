@@ -33,6 +33,7 @@ class NavigationBar extends Component {
               className="NavLink"
               activeClassName="nav-link--active"
               href="/About"
+              id="NavLinkk"
             >
               About
             </Nav.Link>
@@ -40,6 +41,7 @@ class NavigationBar extends Component {
               className="NavLink"
               activeClassName="nav-link--active"
               href="/Gallery"
+              id="NavLinkk2"
             >
               Gallery
             </Nav.Link>
@@ -50,13 +52,19 @@ class NavigationBar extends Component {
   }
 }
 window.onscroll = function () {
-  scrollFunction();
+  if ($(window).width() > 576) {
+    scrollFunction();
+  }
 };
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById('navbarr').classList.add('scrolled');
+    // document.getElementById('NavLinkk').classList.add('scrolledNavLink');
+    //  document.getElementById('NavLinkk2').classList.add('scrolledNavLink');
   } else {
     document.getElementById('navbarr').classList.remove('scrolled');
+    // document.getElementById('NavLinkk').classList.remove('scrolledNavLink');
+    //  document.getElementById('NavLinkk2').classList.remove('scrolledNavLink');
   }
 }
 export default NavigationBar;

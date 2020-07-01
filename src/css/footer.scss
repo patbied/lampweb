@@ -1,0 +1,36 @@
+.footerBox {
+  margin: 20px;
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+  transition: 200ms;
+}
+.fa-facebook-f:hover {
+  color: lighten(#3b5998, 10%);
+  transition: 200ms;
+}
+.fa-google-plus-g {
+  color: red;
+  transition: 200ms;
+}
+.fa-google-plus-g:hover {
+  color: lighten(red, 20%);
+  transition: 200ms;
+}
+.fa-instagram {
+  color: #cd43e6;
+  transition: 200ms;
+}
+.fa-instagram:hover {
+  color: lighten(#cd43e6, 10%);
+  transition: 200ms;
+}
+.fa-twitter {
+  color: #00acee;
+  transition: 200ms;
+}
+.fa-twitter:hover {
+  color: lighten(#00acee, 20%);
+  transition: 200ms;
+}
