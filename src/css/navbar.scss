@@ -1,0 +1,31 @@
+$color1: #aceca1;
+$color2: #629460;
+#navbarr {
+  height: 75px;
+  transition: 300ms linear;
+  background-color: $color2 !important;
+}
+#navbarr.scrolled {
+  height: 50px;
+  transition: 300ms linear;
+  background-color: lighten($color2, 20%) !important;
+}
+.ActiveLink {
+  color: white !important;
+}
+.BrandLink {
+  color: $color1 !important;
+}
+.NavLink {
+  color: $color1 !important;
+  transition: 100ms;
+}
+.nav-link--active {
+  color: $color2 !important;
+}
+.NavLink:hover {
+  color: $color2 !important;
+  background-color: $color1 !important;
+  transition: 100ms;
+  transform: scale(1.1);
+}
